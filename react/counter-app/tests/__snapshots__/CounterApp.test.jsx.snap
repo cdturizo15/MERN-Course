@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Probando componente Counter  Probando match con snapshot 1`] = `
+<div>
+  <div>
+    <h1>
+      Contador
+    </h1>
+    <h2
+      data-testid="value"
+    >
+      Valor: 
+      0
+    </h2>
+    <button>
+      +1
+    </button>
+    <button>
+      -1
+    </button>
+    <button>
+      Reset
+    </button>
+  </div>
+</div>
+`;

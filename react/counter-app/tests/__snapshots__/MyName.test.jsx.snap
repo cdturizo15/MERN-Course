@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas MyName component debe hacer match con snapshot 1`] = `
+<div>
+  <div>
+    <h1
+      data-testid="test-title"
+    >
+      My name is 
+      Cristian
+    </h1>
+    <p>
+      Soy un 
+      crack
+    </p>
+  </div>
+</div>
+`;
