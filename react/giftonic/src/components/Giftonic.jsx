@@ -16,7 +16,7 @@ export const Giftonic = () =>{
     }
     const handleSearch = (key)=>{
         const newCategories = categories.filter(cat => cat!= key)
-        setCategories([key, ...newCategories])
+        setCategories(key, ...newCategories)
     }
     return(
         <div className="main-container">
@@ -31,6 +31,7 @@ export const Giftonic = () =>{
             </div>
             <div className="gifs-container">
             {categories.map((category) =>{
+
                 return (
                     <GifGrid category={category} key={category}/>
                 )
