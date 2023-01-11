@@ -1,6 +1,7 @@
 
 import { Gifs } from './Gifs';
 import { useFetchGifs } from '../Hooks/useFetchGifs';
+import PropTypes from 'prop-types'
 
 
 export const GifGrid = ({category}) =>{
@@ -10,17 +11,21 @@ export const GifGrid = ({category}) =>{
     return (
         <>
         {
-            isLoading 
-            ? (<img src='spinner'></img>)
-            : null
+            isLoading && <h1>Is loading...</h1>
         }     
-        {images==[]
-        ? <h1>No se encontraron resultados :(</h1>
-        :images.map((img) => (
+        {
+
+        images.map((img) => (
             <Gifs {...img} key={img.id}/>
-        ))}
+        ))
+        
+        }
          
         </>
         
     )
+}
+
+GifGrid.propTypes = {
+    category : PropTypes.string.isRequired
 }

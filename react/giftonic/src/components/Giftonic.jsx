@@ -25,7 +25,7 @@ export const Giftonic = () =>{
             <p className="recent-search-title">Recent searchs:</p>
             <div className="container-categories">
             {categories.map(cat=>(
-                <p className="category" key={cat}><span onClick={()=>handleSearch(cat)} className="category-span">{cat}</span><i onClick={()=>handleErase(cat)} className="remove-icon">x</i></p>
+                <p className="category" key={cat}><span onClick={()=>handleSearch(cat)} className="category-span">{cat}</span><i role="icon" onClick={()=>handleErase(cat)} className="remove-icon">x</i></p>
                                 
             ))}
             </div>

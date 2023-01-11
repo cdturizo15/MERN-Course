@@ -16,6 +16,6 @@ export const useFetchGifs = (category)=>{
     }, [])
     return {
         images,
-        isLoading: false
+        isLoading: isLoading
     }
 }
