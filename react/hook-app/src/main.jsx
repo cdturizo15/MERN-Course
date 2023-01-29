@@ -11,9 +11,18 @@ import { Layout } from './useLayoutEffect/Layout'
 import { FocusScreen } from './useRef/FocusScreen'
 import { CounterApp } from './useState/CounterApp'
 import {Padre} from './07-tarea-memo/Padre'
+import { TodoApp } from './useReducer/TodoApp'
+import {MainApp} from './useContext/MainApp'
+import {BrowserRouter} from 'react-router-dom'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   //<React.StrictMode>
-    <Padre />
-  //</React.StrictMode>,
+  <BrowserRouter>
+    <TodoApp/>
+  </BrowserRouter>
+    
+
+    
+  //</React.StrictMode>
 )
